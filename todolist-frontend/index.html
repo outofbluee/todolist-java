@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     <title>TODO List</title>
 </head>
 <body>
@@ -11,9 +12,9 @@
     <div class="content">
         <div class="content--add-todo">
             <!-- input, botao -->
-            <input type="text" id="input-new-todo-name" placeholder="Todo name">
+            <input type="text" id="input-new-todo-name" autocomplete="off" placeholder="Todo name">
 
-            <input type="text" id="input-new-todo-description" placeholder="Todo description">
+            <input type="text" id="input-new-todo-description" autocomplete="off" placeholder="Todo description">
 
             <div class="priority-selector">
                 <button id="priority-btn" onclick="togglePriorityMenu()">P3</button>

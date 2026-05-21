@@ -16,7 +16,11 @@ import br.com.drawbridge.todolist.model.entity.Todo;
 import br.com.drawbridge.todolist.model.service.TodoService;
 
 @RestController
-@CrossOrigin("http://127.0.0.1:5500")
+@CrossOrigin(origins = {
+	"http://localhost:3000",
+	"http://127.0.0.1:3000",
+	"http://127.0.0.1:5500"
+})
 @RequestMapping("/todos")
 public class TodoController {
 
